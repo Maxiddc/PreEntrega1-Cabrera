@@ -1,12 +1,14 @@
+import { Link } from "react-router-dom";
 import './style.css'
 const ItemListContainer = () => {
 
     return (
       <div className='container'>
-        <a className='textEnlace' href="#"> ARTEMI </a>
-        <a className='textEnlace' href="#"> PRODUCTOS </a>
-        <a className='textEnlace' href="#"> SERVICIOS </a>
+        <Link className='textEnlace' to={`/`}>ArtEmi</Link>        
+        <Link className='textEnlace' to={`/category/:idProduct`}>Muebles</Link>  
+        <Link className='textEnlace' to={`/category/:idProduct`}>Hilos</Link> 
         <a className='textEnlace' href="#"> CONTACTO </a>
+        
       </div>
     );
   };
